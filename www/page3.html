@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>page3</title>
+    <script data-main="js/page3" src="js/lib/require.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+      [v-cloak]{
+        display:none
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" v-cloak>
+      <ul>
+        <li v-for="list in lists" :key="list.id">{{ list.name }} : {{ list. age | formatDate }} </li>
+      </ul>
+    </div>
+  </body>
+</html>

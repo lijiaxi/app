@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title page3
+    script(data-main='js/page3' src='js/lib/require.js')
+    link(rel="stylesheet", href="./css/index.css")
+    style.
+      [v-cloak]{
+        display:none
+      }
+  body
+    #app(v-cloak)
+      ul
+        li(v-for='list in lists' :key='list.id')
+          | {{ list.name }} : {{ list. age | formatDate }} 
